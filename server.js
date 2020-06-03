@@ -1,8 +1,20 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req,res) =>{
-    res.send('Hola Mundo');
+const port = process.env.PORT || 3000;
+
+
+app.get('/', (req, res) => {
+    //res.send('Hola Mundo');
+
+    let salida = {
+        
+        nombre: 'Sergio',
+        gitlab: 'https://gitlab.com/smavo',
+    }
+    res.send(salida);
 });
 
-app.listen(3000);
+app.listen(port, () => {
+    console.log(`Escuchando peticiones en el puerto ${ port }`);
+});
