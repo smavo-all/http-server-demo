@@ -1,0 +1,27 @@
+
+nav.redes-sociales {
+    text-align: center;
+}
+
+nav.redes-sociales a {
+    color: white;
+    font-size: 1.8em;
+    margin-right: 20px;
+}
+
+nav.redes-sociales a:last-child {
+    margin-right: 0px;
+}
+
+nav.redes-sociales a:hover {
+    color: rgb(16, 95, 241);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 74px;
+    background-color: #343a40!important;
+}
